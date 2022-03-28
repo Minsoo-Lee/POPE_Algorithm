@@ -18,5 +18,18 @@ def partition(nums, left, right):
         nums[left], nums[right] = nums[right], nums[left]
     return left
 
+# POPE쌤 partition
+# def partition(nums, left, right):
+#     pivot = nums[right];
+
+#     i = left - 1
+#     for j in range(left, right):
+#         if nums[j] < pivot:
+#             i += 1
+#             nums[i], nums[j] = nums[j], nums[i]
+#     pivotPos = i + 1;
+#     nums[pivotPos], nums[right] = nums[right], nums[pivotPos]
+#     return pivotPos
+
 nums = {2, 5, 3, 1, 6, 4, 9, 8, 7}
 print(nums)
